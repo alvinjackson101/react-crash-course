@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import Counter from "./counter";
 
 class Counters extends Component {
+  componenetDidUpdate(prevProps, prevState) {}
   render() {
+    console.log("Counters - Rendered");
     const { onReset, counters, onDelete, onIncrement } = this.props;
     return (
       <div>
